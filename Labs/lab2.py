@@ -2,7 +2,7 @@
 #academic year: 2020-21
 #author: B. Schoen-Phelan
 #date: 02-10-2020
-#purpose: Lab 2
+#purpose: Lab 2 nothing fucking works
 
 class Types_and_Strings:
     def __init__(self):
