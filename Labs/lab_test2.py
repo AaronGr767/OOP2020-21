@@ -4,7 +4,7 @@
 # B. Schoen-Phelan
 # 11-12-2020
 
-# Program Description :
+# Program Description : Lab test 2
 # Aaron Groarke (C19373983)
 
 class Document:
@@ -40,7 +40,10 @@ class Document:
         Arguments: none
         Returns: none
         """
-        del self.characters[self.cursor]
+        try:
+            del self.characters[self.cursor]
+        except:
+            print("Error, delete function has failed.")
 
     def save(self):
         """
@@ -80,7 +83,10 @@ class Document:
 
         Returns: none
         """
-        self.cursor -= steps
+        try:
+            self.cursor -= steps
+        except:
+            print("Error, backward function has failed.")
 
 
 # initialising an object and using the class
@@ -90,7 +96,8 @@ characters = 'fake mews'
 for letter in characters:
     doc.insert(letter)
 
-doc.backward(4)
+doc.backward(44)
 doc.delete()
 doc.insert('n')
 doc.save()
+
